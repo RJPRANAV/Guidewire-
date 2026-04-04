@@ -1,0 +1,171 @@
+.claims-pipeline {
+  display: grid;
+  gap: 18px;
+}
+
+.pipeline-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.pipeline-stat {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.stat-number {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.stat-number.approved {
+  color: var(--brand);
+}
+
+.stat-number.processing {
+  color: var(--accent);
+}
+
+.stat-number.pending {
+  color: var(--text-soft);
+}
+
+.claims-list {
+  display: grid;
+  gap: 10px;
+}
+
+.claim-card {
+  background: linear-gradient(135deg, var(--surface) 0%, #f4fffc 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.claim-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.1);
+}
+
+.claim-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.claim-id {
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 4px;
+}
+
+.claim-event {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.claim-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.claim-status-approved {
+  background: rgba(13, 148, 136, 0.15);
+  color: var(--brand);
+}
+
+.claim-status-processing {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent);
+}
+
+.claim-status-pending {
+  background: rgba(73, 97, 109, 0.15);
+  color: var(--text-soft);
+}
+
+.claim-body {
+  display: grid;
+  gap: 6px;
+}
+
+.claim-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.claim-date {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.claim-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  background: rgba(13, 148, 136, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+@media (max-width: 700px) {
+  .pipeline-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.how-it-works {
+  display: grid;
+  gap: 12px;
+}
+
+.step {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--surface-soft);
+  border-radius: var(--radius-md);
+}
+
+.step-num {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.step p {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.step strong {
+  color: var(--text);
+}
+

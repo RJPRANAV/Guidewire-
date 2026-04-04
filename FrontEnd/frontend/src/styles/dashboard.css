@@ -1,0 +1,130 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.dashboard,
+.content-page {
+  width: min(1050px, 100% - 40px);
+  margin: 26px auto 40px;
+  display: grid;
+  gap: 18px;
+}
+
+.page-head {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+}
+
+.page-head h2 {
+  margin-bottom: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.summary-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: 0 8px 30px rgba(17, 60, 54, 0.08);
+}
+
+.summary-card h4 {
+  margin-bottom: 8px;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.summary-card p {
+  color: var(--text);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  display: grid;
+  gap: 16px;
+}
+
+.action-panel h3 {
+  font-size: 1.1rem;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.action-grid button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.action-grid button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
+}
+
+.secondary-btn {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+}
+
+.warning-btn {
+  background: linear-gradient(135deg, var(--accent) 0%, #d97706 100%);
+}
+
+.danger-btn {
+  background: linear-gradient(135deg, var(--danger) 0%, #b91c1c 100%);
+}
+
+.stats-list {
+  display: grid;
+  gap: 10px;
+}
+
+.stats-list p {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-soft);
+  padding: 12px;
+}
+
+@media (max-width: 700px) {
+  .dashboard,
+  .content-page {
+    width: calc(100% - 24px);
+    margin-top: 14px;
+  }
+
+  .page-head,
+  .panel {
+    padding: 16px;
+  }
+}
+
+.events-list {
+  display: grid;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}

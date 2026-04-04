@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --bg: #f3f7f5;
+  --surface: #ffffff;
+  --surface-soft: #f7fbf9;
+  --text: #13222a;
+  --text-soft: #49616d;
+  --line: #d3e2de;
+  --brand: #0d9488;
+  --brand-strong: #0f766e;
+  --accent: #f59e0b;
+  --danger: #dc2626;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --shadow: 0 20px 60px rgba(16, 42, 37, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 10%, #b9efe8 0%, transparent 35%),
+    radial-gradient(circle at 85% 20%, #ffe2b0 0%, transparent 32%),
+    linear-gradient(180deg, #f3f7f5 0%, #e8f2ef 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page-enter {
+  animation: fadeUp 0.45s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,128 @@
+.policy-card {
+  background: linear-gradient(135deg, var(--surface) 0%, #f4fffc 100%);
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.policy-item {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: center;
+}
+
+.policy-item .label {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.policy-item .value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 4px;
+}
+
+.policy-item .detail {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.coverage-list {
+  display: grid;
+  gap: 12px;
+}
+
+.coverage-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--brand);
+}
+
+.coverage-icon {
+  font-size: 1.6rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.coverage-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.coverage-desc {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.param-steps {
+  display: grid;
+  gap: 10px;
+}
+
+.param-step {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--surface-soft);
+  border-radius: var(--radius-md);
+}
+
+.param-icon {
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.param-step p {
+  color: var(--text);
+}
+
+.param-step strong {
+  color: var(--text);
+}
+
+.risk-info {
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+}
+
+.risk-info p {
+  margin: 0;
+  color: var(--text);
+}
+
+.risk-medium {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.risk-detail {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
